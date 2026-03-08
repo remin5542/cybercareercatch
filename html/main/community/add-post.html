@@ -1,44 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>자유게시판 글쓰기</title>
   <link rel="stylesheet" href="../../../assets/css/main/community/add-post.css">
 </head>
+
 <body>
-  <main class="free-write-main">
-    <div class="free-write-top">
-      <h2 class="free-write-title">자유게시판</h2>
-      <a href="post-list.html" class="free-write-move-btn">자유게시판으로 이동</a>
+  <!--
+    Abbrev(축약어) 규칙
+    fbw = Free Board Write (이 페이지 공통 prefix)
+    top = 상단 타이틀 영역
+    ttl = title
+    mv = move button
+    pnl = panel(전체 박스)
+    row = 한 줄 영역
+    lbl = label
+    inp = input
+    ta = textarea
+    btm = 하단 버튼 영역
+    btn = 버튼
+  -->
+
+  <main class="fbw-wrap">
+    <div class="fbw-top">
+      <h2 class="fbw-top-ttl">자유게시판</h2>
+      <a href="post-list.html" class="fbw-top-mv">자유게시판으로 이동</a>
     </div>
 
-    <div class="free-write-box">
-      <div class="free-write-row">
-        <label class="free-write-label" for="postTitle">제목</label>
+    <div class="fbw-pnl">
+      <div class="fbw-row">
+        <label class="fbw-lbl" for="postTitle">제목</label>
         <input
           type="text"
           id="postTitle"
-          class="free-write-title-input"
+          class="fbw-inp"
           placeholder="게시글 제목을 입력해주세요."
         >
       </div>
 
-      <div class="free-write-row free-write-row-content">
-        <label class="free-write-label" for="postContent">내용</label>
+      <div class="fbw-row">
+        <label class="fbw-lbl" for="postContent">내용</label>
         <textarea
           id="postContent"
-          class="free-write-content-input"
+          class="fbw-ta"
           placeholder="자유롭게 내용을 입력하세요"
         ></textarea>
       </div>
 
-      <div class="free-write-btn-wrap">
-        <button type="button" class="free-write-btn" id="savePostBtn">등록완료</button>
+      <div class="fbw-btm">
+        <button type="button" class="fbw-btn" id="savePostBtn">등록완료</button>
       </div>
     </div>
   </main>
 
   <script src="../../../assets/js/main/community/add-qna.js"></script>
 </body>
+
 </html>

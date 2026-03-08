@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>공지사항</title>
   <link rel="stylesheet" href="../../../assets/css/main/community/post-notification.css">
 </head>
+
 <body>
-  <main class="notice-main">
-    <div class="notice-top">
-      <h2 class="notice-title">공지사항</h2>
-      <a href="post-list.html" class="notice-move-btn">자유게시판으로 이동하기</a>
+  <!--
+    Abbrev(축약어) 규칙
+    ntd = Notice Detail (이 페이지 공통 prefix)
+    top = 상단 타이틀 영역
+    ttl = title
+    mv = move button
+    pnl = panel(전체 박스)
+    head = 상단 정보 영역
+    info = 작성자/날짜/조회수 영역
+    cont = 본문 영역
+    btm = 하단 버튼 영역
+    btn = 버튼
+  -->
+
+  <main class="ntd-wrap">
+    <div class="ntd-top">
+      <h2 class="ntd-top-ttl">공지사항</h2>
+      <a href="post-list.html" class="ntd-top-mv">자유게시판으로 이동하기</a>
     </div>
 
-    <div class="notice-box">
-      <div class="notice-head">
-        <h3 class="notice-head-title" id="noticeTitle">공지 제목</h3>
-        <div class="notice-head-info">
+    <div class="ntd-pnl">
+      <div class="ntd-head">
+        <h3 class="ntd-head-ttl" id="noticeTitle">공지 제목</h3>
+
+        <div class="ntd-head-info">
           <span id="noticeWriter">작성자: 관리자</span>
           <span id="noticeDate">| 작성일: 260308</span>
-          <span id="noticeViews">| 조회수: 0</span>
+          <span id="noticeViews">| 조회수: 100</span>
         </div>
       </div>
 
-      <div class="notice-content" id="noticeContent">
+      <div class="ntd-cont" id="noticeContent">
         공지 내용이 여기에 표시됩니다.
       </div>
 
-      <div class="notice-bottom">
-        <a href="post-list.html" class="notice-btn">목록으로</a>
+      <div class="ntd-btm">
+        <a href="post-list.html" class="ntd-btn">목록으로</a>
       </div>
     </div>
   </main>
 
   <script src="../../../assets/js/main/community/notice-detail.js"></script>
 </body>
+
 </html>

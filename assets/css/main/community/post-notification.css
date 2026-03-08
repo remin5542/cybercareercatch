@@ -1,3 +1,16 @@
+/* 
+  Abbrev(축약어) 규칙
+  ntd = Notice Detail (이 페이지 공통 prefix)
+  top = 상단 타이틀 영역
+  ttl = title
+  mv = move button
+  pnl = panel(전체 박스)
+  head = 상단 정보 영역
+  info = 작성자/날짜/조회수 영역
+  cont = 본문 영역
+  btm = 하단 버튼 영역
+  btn = 버튼
+*/
 
 * {
   margin: 0;
@@ -6,90 +19,91 @@
 }
 
 body {
-  background: #f7f7f7;
-  color: #333;
+  background-color: white;
+  color: black;
   font-size: 14px;
 }
 
-.notice-main {
+.ntd-wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 50px 0 80px;
 }
 
-.notice-top {
+.ntd-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.notice-title {
+.ntd-top-ttl {
   font-size: 28px;
   font-weight: 700;
 }
 
-.notice-move-btn {
-  background:#7d84e6;
+.ntd-top-mv {
+  background-color: #7d84e6;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
-  font-size: 13px;
   text-decoration: none;
+  font-size: 13px;
 }
 
-.notice-move-btn:hover {
-  background: #7d84e6;
-}
-
-.notice-box {
+.ntd-pnl {
   width: 100%;
-  background: #efefef;
-  border: 1px solid #d9d9d9;
-  border-radius: 16px;
-  padding: 45px 40px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  background-color: white;
+  padding: 35px 30px 30px;
 }
 
-.notice-head {
+.ntd-head {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   padding-bottom: 18px;
-  border-bottom: 1px solid #cfcfcf;
   margin-bottom: 20px;
 }
 
-.notice-head-title {
-  font-size: 18px;
+.ntd-head-ttl {
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.notice-head-info {
-  font-size: 12px;
-  color: #666;
+.ntd-head-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #666666;
 }
 
-.notice-content {
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 12px;
-  padding: 18px;
+.ntd-cont {
+  width: 100%;
   min-height: 340px;
-  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  line-height: 1.7;
 }
 
-.notice-bottom {
-  margin-top: 18px;
-  text-align: right;
+.ntd-btm {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.notice-btn {
-  background: #7d84e6;
+.ntd-btn {
+  background-color: #7d84e6;
   color: white;
   padding: 8px 14px;
   border-radius: 6px;
-  font-size: 12px;
   text-decoration: none;
-}
-
-.notice-btn:hover {
-  background: #7b83f5;
+  font-size: 13px;
 }

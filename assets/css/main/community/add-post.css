@@ -1,3 +1,18 @@
+/* 
+  Abbrev(축약어) 규칙
+  fbw = Free Board Write (이 페이지 공통 prefix)
+  top = 상단 타이틀 영역
+  ttl = title
+  mv = move button
+  pnl = panel(전체 박스)
+  row = 한 줄 영역
+  lbl = label
+  inp = input
+  ta = textarea
+  btm = 하단 버튼 영역
+  btn = 버튼
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,119 +20,101 @@
 }
 
 body {
-  background: white;
+  background-color: white;
   color: black;
   font-size: 14px;
 }
 
-.free-write-main {
+.fbw-wrap {
   width: 1200px;
   margin: 0 auto;
   padding: 50px 0 80px;
 }
 
-.free-write-top {
+.fbw-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.free-write-title {
+.fbw-top-ttl {
   font-size: 28px;
   font-weight: 700;
-  color: black;
 }
 
-.free-write-move-btn {
-  background: #7d84e6;
+.fbw-top-mv {
+  background-color: #7d84e6;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
-  font-size: 13px;
   text-decoration: none;
-  border: 1px solid #7d84e6;
+  font-size: 13px;
 }
 
-.free-write-move-btn:hover {
-  background: #7d84e6;
-  border: 1px solid #7d84e6;
-}
-
-.free-write-box {
+.fbw-pnl {
   width: 100%;
-  background: white;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 12px;
-  padding: 45px 40px 40px;
+  background-color: white;
+  padding: 35px 30px 30px;
 }
 
-.free-write-row {
+.fbw-row {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-.free-write-row-content {
-  margin-bottom: 20px;
-}
-
-.free-write-label {
+.fbw-lbl {
   display: block;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: black;
 }
 
-.free-write-title-input {
+.fbw-inp {
   width: 100%;
-  height: 44px;
-  border: none;
-  border-bottom: 2px solid black;
-  background: transparent;
-  font-size: 15px;
-  padding: 0 4px;
-  color: black;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-.free-write-title-input:focus {
+.fbw-inp:focus {
   outline: none;
-  border-bottom: 2px solid red;
+  border: 1px solid #7d84e6;
 }
 
-.free-write-content-input {
+.fbw-ta {
   width: 100%;
   height: 420px;
-  border: none;
-  border-bottom: 2px solid black;
-  background: transparent;
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
   resize: none;
-  font-size: 15px;
-  padding: 10px 4px;
-  color: black;
+  font-size: 14px;
 }
 
-.free-write-content-input:focus {
+.fbw-ta:focus {
   outline: none;
-  border-bottom: 2px solid red;
+  border: 1px solid #7d84e6;
 }
 
-.free-write-btn-wrap {
+.fbw-btm {
   width: 100%;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
 }
 
-.free-write-btn {
-  border: 1px solid #dc2626;
-  background: #dc2626;
+.fbw-btn {
+  background-color: #7d84e6;
   color: white;
-  padding: 8px 16px;
+  border: none;
   border-radius: 6px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.free-write-btn:hover {
-  background: #b91c1c;
-  border: 1px solid #b91c1c;
+  padding: 10px 18px;
+  font-size: 13px;
 }

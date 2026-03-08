@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../../assets/css/main/mypage/mypage-company-edit-jobposting.css">
   <script defer src="../../../assets/js/main/mypage/mypage-company-edit-jobposting.js"></script>
 </head>
+
 <body>
   <main>
     <div class="jobpost-main-container">
@@ -66,22 +67,28 @@
         <!-- 기업 정보 -->
         <div class="jobpost-section">
           <div class="jobpost-section-title">기업 정보</div>
+
+          <div class="jobpost-section-box">
+            <div class="jobpost-section-subtitle">한줄소개</div>
+            <div class="jobpost-section-content"><input class="jobpost-section-inputcontent" type="text"
+                name="company_description" id="company-description" placeholder="예 : 보안서비스 개발 컨설팅 전문기업"></div>
+          </div>
           <div class="jobpost-section-box">
             <div class="jobpost-section-subtitle">대표기술</div>
-            <div class="jobpost-section-content-textarea"><textarea class="jobpost-section-content"
-                name="company_tech" id="company-tech" placeholder="사용 기술, 보유 기술, 핵심 역량 등을 입력하세요"></textarea></div>
+            <div class="jobpost-section-content-textarea"><textarea class="jobpost-section-content" name="company_tech"
+                id="company-tech" placeholder="사용 기술, 보유 기술, 핵심 역량 등을 입력하세요"></textarea></div>
           </div>
 
           <div class="jobpost-section-box">
             <div class="jobpost-section-subtitle">주요사업</div>
-            <div class="jobpost-section-content-textarea"><textarea name="company_business"
-                id="company-business" placeholder="주요 서비스, 사업 분야 등을 입력하세요"></textarea></div>
+            <div class="jobpost-section-content-textarea"><textarea name="company_business" id="company-business"
+                placeholder="주요 서비스, 사업 분야 등을 입력하세요"></textarea></div>
           </div>
 
           <div class="jobpost-section-box">
             <div class="jobpost-section-subtitle">서비스 확장 및 운영 이력</div>
-            <div class="jobpost-section-content-textarea"><textarea name="company_history"
-                id="company-history" placeholder="주요 서비스, 사업 분야 등을 입력하세요"></textarea></div>
+            <div class="jobpost-section-content-textarea"><textarea name="company_history" id="company-history"
+                placeholder="주요 서비스, 사업 분야 등을 입력하세요"></textarea></div>
           </div>
         </div>
 
@@ -130,8 +137,8 @@
 
           <div class="jobpost-section-box">
             <div class="jobpost-section-subtitle">지원 정보</div>
-            <div class="jobpost-section-content-textarea"><textarea name="company_apply"
-                id="company-apply"></textarea></div>
+            <div class="jobpost-section-content-textarea"><textarea name="company_apply" id="company-apply"></textarea>
+            </div>
           </div>
         </div>
 

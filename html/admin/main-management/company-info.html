@@ -5,85 +5,67 @@
     <meta charset="UTF-8">
     <title>관리자 페이지</title>
 
-    <!-- qnaMgmt = qnaManagement -->
-    <!-- ctr = container -->
-    <!-- hdr = header -->
-    <!-- nav = navigation -->
-    <!-- side = sidebar -->
-    <!-- ct = content -->
-    <!-- tbl = table -->
-
     <link rel="stylesheet" href="/assets/css/admin/main-management/company-info.css">
 
 </head>
 
-<body class="qnaMgmt-body">
+<body class="companyInfo-body">
 
-    <div class="qnaMgmt-ctr">
+    <div class="companyInfo-ctr">
 
-        <!-- header -->
-        <header class="qnaMgmt-hdr">
+        <header class="companyInfo-hdr">
 
-            <div class="qnaMgmt-title">관리자 페이지</div>
+            <div class="companyInfo-title">관리자 페이지</div>
 
-            <nav class="qnaMgmt-nav">
+            <nav class="companyInfo-nav">
                 <a href="#">회원 관리</a>
                 <a href="./qna-management.html">메인 관리</a>
                 <a href="../community-management/expo-schedule.html">커뮤니티 관리</a>
             </nav>
 
-            <button class="qnaMgmt-logout">로그아웃</button>
+            <button class="companyInfo-logout">로그아웃</button>
 
         </header>
 
+        <main class="companyInfo-main">
 
-        <main class="qnaMgmt-main">
+            <aside class="companyInfo-side">
 
-            <!-- sidebar -->
-            <aside class="qnaMgmt-side">
-
-                <div class="qnaMgmt-sideItem">
+                <div class="companyInfo-sideItem">
                     <a href="./qna-management.html">질의문 관리</a>
                 </div>
 
-                <div class="qnaMgmt-sideItem qnaMgmt-active">
+                <div class="companyInfo-sideItem companyInfo-active">
                     <a href="./company-info.html">기업 정보페이지</a>
                 </div>
 
-                <div class="qnaMgmt-sideItem">
-                     <a href="./roadmap-management.html">로드맵 관리</a>
+                <div class="companyInfo-sideItem">
+                    <a href="./roadmap-management.html">로드맵 관리</a>
                 </div>
 
             </aside>
 
-
             <form>
 
-                <section class="qnaMgmt-ct">
+                <section class="companyInfo-ct">
 
                     <!-- search -->
-                    <div class="qnaMgmt-search">
-
+                    <div class="companyInfo-search">
                         <input type="text" placeholder="기업명검색">
                         <button type="button">검색</button>
-
                     </div>
 
-
                     <!-- table header -->
-                    <div class="qnaMgmt-tblHead">
-
+                    <div class="companyInfo-tblHead">
                         <div class="col1">선택</div>
                         <div class="col2">번호</div>
                         <div class="col3">기업명</div>
                         <div class="col4">직군</div>
                         <div class="col5">날짜</div>
-
                     </div>
 
-
-                    <!-- row -->
-                    <div class="qnaMgmt-row">
+                    <!-- rows -->
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">10</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -91,7 +73,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">9</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -99,7 +81,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">8</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -107,7 +89,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">7</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -115,7 +97,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">6</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -123,7 +105,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">5</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -131,7 +113,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">4</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -139,7 +121,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">3</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -147,7 +129,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">2</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -155,7 +137,7 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-                    <div class="qnaMgmt-row">
+                    <div class="companyInfo-row">
                         <div class="col1"><input type="checkbox"></div>
                         <div class="col2">1</div>
                         <div class="col3">모의 해킹 진단원</div>
@@ -163,10 +145,8 @@
                         <div class="col5">2026.11.14</div>
                     </div>
 
-
                     <!-- pagination -->
-                    <div class="qnaMgmt-page">
-
+                    <div class="companyInfo-page">
                         <span>&lt;</span>
                         <span class="active">1</span>
                         <span>2</span>
@@ -174,15 +154,11 @@
                         <span>4</span>
                         <span>5</span>
                         <span>&gt;</span>
-
                     </div>
 
-
                     <!-- delete -->
-                    <div class="qnaMgmt-del">
-
+                    <div class="companyInfo-del">
                         <button type="button">삭제</button>
-
                     </div>
 
                 </section>
@@ -191,7 +167,7 @@
 
         </main>
     </div>
-    <script src="../../../assets/js/admin/main-management/company-info.js"></script>
+    <script src="/assets/js/admin/main-management/company-info.js"></script>
 </body>
 
 </html>

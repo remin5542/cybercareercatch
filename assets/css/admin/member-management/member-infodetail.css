@@ -151,7 +151,7 @@ font-weight:bold;
 
 /* 목록 이동 버튼 */
 
-.member-infodetail-move-btn{
+/* .member-infodetail-move-btn{
 background:#7a88f0;
 color:white;
 border:none;
@@ -162,8 +162,22 @@ cursor:pointer;
 
 .member-infodetail-move-btn:hover{
 background:#5f6de0;
+} */
+.member-infodetail-move-btn{
+display:inline-block;
+background:#6b83d6;
+color:white;
+padding:8px 16px;
+border-radius:6px;
+text-decoration:none;
+cursor:pointer;
 }
 
+/* hover 추가 */
+
+.member-infodetail-move-btn:hover{
+background:#5569c1;
+}
 
 /* 회원 정보 영역 */
 

@@ -139,15 +139,31 @@
     color:#555;
 }
 
-/* 이동 버튼 */
-.company-checkdetail-move-btn{
+/* 목록 이동 버튼 */
+/* .company-checkdetail-move-btn{
     background:#7a88f0;
     color:white;
     border:none;
     padding:8px 12px;
     border-radius:5px;
     cursor:pointer;
+} */
+.company-checkdetail-move-btn{
+display:inline-block;
+background:#6b83d6;
+color:white;
+padding:8px 16px;
+border-radius:6px;
+text-decoration:none;
+cursor:pointer;
 }
+
+/* hover 추가 */
+
+.company-checkdetail-move-btn:hover{
+background:#5569c1;
+}
+
 
 /* 정보 리스트 (table 대체) */
 .company-checkdetail-info{

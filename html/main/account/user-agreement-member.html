@@ -121,48 +121,7 @@
   <footer></footer>
 
   <!-- 유효성 검사 및 전체동의 자바스크립트 -->
-  <script>
-    const form = document.getElementById('userAgreeMemForm');
-    const chkAll = document.getElementById('chkAll');
-    const reqCheckboxes = document.querySelectorAll('.req-checkbox');
-
-    // 1. 전체동의 체크박스 클릭 시 동작
-    chkAll.addEventListener('change', function() {
-      const isChecked = this.checked;
-      reqCheckboxes.forEach(function(checkbox) {
-        checkbox.checked = isChecked;
-      });
-    });
-
-    // 2. 개별 체크박스 클릭 시 전체동의 상태 업데이트
-    reqCheckboxes.forEach(function(checkbox) {
-      checkbox.addEventListener('change', function() {
-        let allChecked = true;
-        reqCheckboxes.forEach(function(chk) {
-          if (!chk.checked) allChecked = false;
-        });
-        chkAll.checked = allChecked;
-      });
-    });
-
-    // 3. 폼 제출(확인 버튼) 시 필수 체크 확인
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); // 기본 이동 방지
-      
-      let isAllChecked = true;
-      reqCheckboxes.forEach(function(checkbox) {
-        if (!checkbox.checked) {
-          isAllChecked = false;
-        }
-      });
-
-      if (!isAllChecked) {
-        alert("동의란을 체크해주세요");
-      } else {
-        // 실제 다음 일반 회원가입 페이지로 연결될 주소 입력
-        window.location.href = "signup-member.html"; 
-      }
-    });
+  <script src="../../../assets/js/main/account/user-agreement-member.js">
   </script>
 </body>
 </html>
